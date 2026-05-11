@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    padding: 20px;
+}
+
+article {
+    background: linear-gradient(180deg, #1f2d3d 0%, #192a35 100%);
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Rating Window Styles */
+.ratingwindow {
+    text-align: left;
+}
+
+.ratingwindow::before {
+    content: url('./images/icon-star.svg');
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.ratingwindow h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 20px 0 15px 0;
+    font-weight: 700;
+}
+
+.ratingwindow p {
+    color: #969fa3;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Rating Buttons */
+.ratingbuttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.ratingbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #262f38;
+    color: #7c8798;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratingbutton:hover {
+    background-color: #7c8798;
+    color: #ffffff;
+}
+
+.ratingbutton.active {
+    background-color: #ff7953;
+    color: #ffffff;
+}
+
+/* Submit Button */
+.submitButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7953;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #ffffff;
+    color: #ff7953;
+}
+
+.thank-you-state {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-state::before {
+    content: url('./images/illustration-thank-you.svg');
+    margin-bottom: 30px;
+    display: block;
+}
+
+.thank-you-message {
+    color: #ff7953;
+    background-color: #262f38;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.thank-you-state h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.thank-you-state p {
+    color: #969fa3;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    article {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .ratingwindow h2,
+    .thank-you-state h2 {
+        font-size: 24px;
+    }
+
+    .ratingbutton {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .ratingbuttons {
+        gap: 12px;
+    }
+}
