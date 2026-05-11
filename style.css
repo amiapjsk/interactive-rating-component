@@ -23,7 +23,6 @@ article {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* Rating Window Styles */
 .ratingwindow {
     text-align: left;
 }
@@ -48,7 +47,6 @@ article {
     margin-bottom: 30px;
 }
 
-/* Rating Buttons */
 .ratingbuttons {
     display: flex;
     justify-content: space-between;
@@ -82,7 +80,6 @@ article {
     color: #ffffff;
 }
 
-/* Submit Button */
 .submitButton {
     width: 100%;
     padding: 15px;
