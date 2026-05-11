@@ -1,5 +1,4 @@
 const ratingButtons = document.querySelectorAll('.ratingbutton');
-const submitButton = document.querySelector('.submitButton');
 const thankYouState = document.querySelector('.thank-you-state');
 const ratingState = document.querySelector('.ratingwindow');
 let selectedRating = 0;
